@@ -4,7 +4,7 @@
 
     <script>
       // Load the JSON data from the file
-      var xhr = new XMLHttpRequest(http://etienne0101.github.io/data/data/table1.json);
+      var xhr = new XMLHttpRequest("/data/table1.json");
       xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.DONE) {
           var data = JSON.parse(xhr.responseText);
