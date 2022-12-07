@@ -14,7 +14,7 @@ const getData = async () => {
     // Loop through the data and create a list of items
     let resultHTML = "<ul>";
     data.forEach(item => {
-      resultHTML += `<li>${item.name}: ${item.value}</li>`;
+      resultHTML += `<li>${activity}: ${type}</li>`;
     });
     resultHTML += "</ul>";
 
