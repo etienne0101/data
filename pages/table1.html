@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
   </head>
   <body>
-    <table id="table1" class="display">
+    <table id="data/table1" class="display">
       <thead>
         <tr>
           <th>field1</th>
@@ -18,7 +18,7 @@
     <script>
       $(document).ready(function() {
         $('#table1').DataTable({
-          data: table1,
+          data: data/table1,
           columns: [
             { data: 'field1' },
             { data: 'field2' },
