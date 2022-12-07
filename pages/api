@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+// Make an AJAX request to the API
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://www.boredapi.com/api/activity', true);
+xhr.send();
+
+// Process the response when it is received
+xhr.onload = function() {
+  if (xhr.status === 200) {
+    // Parse the response as JSON
+    var response = JSON.parse(xhr.responseText);
+
+    // Do something with the response
+    // For example, you could display it on the page
+    var resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = response.result;
+  }
+};
+
+</body>
+</html>
