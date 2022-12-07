@@ -5,7 +5,7 @@ const API_URL = "https://www.boredapi.com/api/activity";
 const getData = async () => {
   try {
     // Fetch the data from the API
-    const response = await fetch(API_URL);
+    const response = await fetch(https://www.boredapi.com/api/activity);
     const data = await response.json();
 
     // Select the div where the data will be displayed
